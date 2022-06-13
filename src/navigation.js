@@ -45,6 +45,8 @@ function homePage() {
 
 function trendsPage() {
 
+  headerSection.style.background = "";
+
   headerTitle.classList.add("inactive");
   searchForm.classList.add("inactive");
   movieDetailSection.classList.add("inactive");
@@ -65,6 +67,8 @@ function trendsPage() {
 //*********************************************************************************** */
 
 function searchPage() {
+
+  headerSection.style.background = "";
 
   headerTitle.classList.add("inactive");
   headerCategoryTitle.classList.add("inactive");
@@ -130,7 +134,6 @@ function movieDetailsPage() {
   removeClasses(headerSection);
 
   headerSection.classList.add("header-container--long");
-  arrowBtn.classList.add("header-arrow--white");
   headerTitle.classList.add("inactive");
   headerCategoryTitle.classList.add("inactive");
   genericSection.classList.add("inactive");
@@ -167,7 +170,8 @@ arrowBtn.addEventListener("click", () => {
 
 //*********************************************************************************** */
 
-searchFormBtn.addEventListener("click", () => {
+searchFormBtn.addEventListener("click", (e) => {
+  e.preventDefault();
   location.hash = `search=${searchFormInput.value}`;
 });
 

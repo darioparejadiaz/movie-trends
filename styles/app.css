@@ -1,6 +1,7 @@
 /* General */
 * {
   box-sizing: border-box;
+  user-select: none;
 }
 
 :root {
@@ -282,14 +283,16 @@ footer {
 }
 
 .header-arrow {
-  font-weight: var(--font-weight-text2);
-  font-size: 36px;
   margin-bottom: 16px;
   cursor: pointer;
   display: inline-block;
 }
-.header-arrow--white {
-  color: var(--purple-light-1);
+
+.header-arrow svg{
+  width: 32px;
+  height: 32px;
+  stroke: var(--purple-light-1);
+  stroke-width: 3;
 }
 
 .header-searchForm {
@@ -302,7 +305,6 @@ footer {
 }
 
 .header-searchForm input {
-  /* color: var(--blue-primary); */
   height: 48px;
   width: 100%;
   border-top-left-radius: 8px;
@@ -469,7 +471,7 @@ footer {
 .unfounded-container h2 {
   text-align: center;
   width: 90%;
-  overflow-wrap: break-word;
+  word-break: break-all;
   font-size: 24px;
   color: var(--purple-light-1);
 }
