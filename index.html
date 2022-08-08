@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- ************************************************************************************************* -->
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="/assets/camera-reels.svg" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,81 +15,45 @@
       href="https://fonts.googleapis.com/css2?family=Dosis:wght@700;800&family=Red+Hat+Display:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/app.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
 
     <title>The Movie API</title>
   </head>
+
+  <!-- ************************************************************************************************* -->
+
   <body>
-    <header id="header" class="header-container">
-      <span class="header-arrow header-arrow--white inactive"><svg viewBox="0 0 64 64" fill="none"><path d="M51.61 25.21L33.2 11.4a2 2 0 00-2.4 0L12.39 25.21a2 2 0 00-.8 1.6v26.64a2 2 0 002 2H25a2 2 0 002-2V45a2 2 0 012-2h7a2 2 0 012 2v8.45a2 2 0 002 2h10.41a2 2 0 002-2V26.81a2 2 0 00-.8-1.6z"></path></svg></span>
-      <h1 class="header-title">The Movie API</h1>
-      <h1 class="header-title header-title--categoryView inactive">Acción</h1>
+    <section class="app-container">
+      <!-- ************************************************************************************************* -->
 
-      <form id="searchForm" class="header-searchForm">
-        <input type="text" placeholder="Type some movie..." />
-        <button id="searchBtn">🔍</button>
-      </form>
-    </header>
+      <header id="header" class="header-container">
+        <span class="header-arrow header-arrow--white inactive">
+          <svg viewBox="0 0 64 64" fill="none">
+            <path
+              d="M51.61 25.21L33.2 11.4a2 2 0 00-2.4 0L12.39 25.21a2 2 0 00-.8 1.6v26.64a2 2 0 002 2H25a2 2 0 002-2V45a2 2 0 012-2h7a2 2 0 012 2v8.45a2 2 0 002 2h10.41a2 2 0 002-2V26.81a2 2 0 00-.8-1.6z"
+            ></path>
+          </svg>
+        </span>
+        <h1 class="header-title">The Movie API</h1>
+        <h1 class="header-title header-title--categoryView inactive">Acción</h1>
 
-    <section id="trendingPreview" class="trendingPreview-container">
-      <div class="trendingPreview-header">
-        <h2 class="trendingPreview-title">Trends</h2>
-        <button class="trendingPreview-btn">More</button>
-      </div>
+        <form id="searchForm" class="header-searchForm">
+          <input type="text" placeholder="Type some movie..." />
+          <button id="searchBtn">
+            <img src="/assets/search.svg" alt="" />
+          </button>
+        </form>
+      </header>
 
-      <article class="trendingPreview-movieList">
-        <!-- <div class="movie-container">
-          <img
-            src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
-            class="movie-img"
-            alt="Nombre de la película"
-          />
-        </div> -->
-      </article>
-    </section>
+      <!-- ************************************************************************************************* -->
 
-    <section id="categoriesPreview" class="categoriesPreview-container">
-      <h2 class="categoriesPreview-title">Categories</h2>
+      <section id="trendingPreview" class="trendingPreview-container">
+        <div class="trendingPreview-header">
+          <h2 class="trendingPreview-title">Trends</h2>
+          <button class="trendingPreview-btn">More</button>
+        </div>
 
-      <article class="categoriesPreview-list">
-        <!-- <div class="category-container">
-          <h3 id="id28" class="category-title">Romance</h3>
-        </div> -->
-      </article>
-    </section>
-
-    <section id="genericList" class="genericList-container inactive">
-      <!-- <div class="unfounded-container">
-        <h2>No results</h2>
-        <img src="./assets/reading-person.svg" alt="">
-      </div> -->
-      <!-- <div class="movie-container">
-        <img
-          src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
-          class="movie-img"
-          alt="Nombre de la película"
-        />
-      </div> -->
-    </section>
-
-    <section id="movieDetail" class="movieDetail-container inactive">
-      <h1 class="movieDetail-title">Deadpool</h1>
-      <span class="movieDetail-score">7.6</span>
-      <p class="movieDetail-description">
-        <!-- Wisecracking mercenary Deadpool battles the evil and powerful Cable and
-        other bad guys to save a boy's life. -->
-      </p>
-
-      <article class="categories-list">
-        <!-- <div class="category-container">
-          <h3 id="id28" class="category-title">Romance</h3>
-        </div> -->
-      </article>
-
-      <article class="relatedMovies-container">
-        <h2 class="relatedMovies-title">Related Movies</h2>
-
-        <div class="relatedMovies-scrollContainer">
+        <article class="trendingPreview-movieList">
           <!-- <div class="movie-container">
             <img
               src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
@@ -93,16 +61,84 @@
               alt="Nombre de la película"
             />
           </div> -->
-        </div>
-      </article>
+        </article>
+      </section>
+
+      <!-- ************************************************************************************************* -->
+
+      <section id="categoriesPreview" class="categoriesPreview-container">
+        <h2 class="categoriesPreview-title">Categories</h2>
+
+        <article class="categoriesPreview-list">
+          <!-- <div class="category-container">
+            <h3 id="id28" class="category-title">Romance</h3>
+          </div> -->
+        </article>
+      </section>
+
+      <!-- ************************************************************************************************* -->
+
+      <section id="genericList" class="genericList-container inactive">
+        <!-- <div class="unfounded-container">
+          <h2>No results</h2>
+          <img src="./assets/reading-person.svg" alt="" />
+        </div> -->
+
+        <!-- <div class="movie-container">
+          <img
+            src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+            class="movie-img"
+            alt="Nombre de la película"
+          />
+        </div> -->
+      </section>
+
+      <!-- ************************************************************************************************* -->
+
+      <section id="movieDetail" class="movieDetail-container inactive">
+        <h1 class="movieDetail-title">Deadpool</h1>
+        <span class="movieDetail-score">7.6</span>
+        <p class="movieDetail-description">
+          <!-- Wisecracking mercenary Deadpool battles the evil and powerful Cable
+          and other bad guys to save a boy's life. -->
+        </p>
+
+        <article class="categories-list">
+          <!-- <div class="category-container">
+            <h3 id="id28" class="category-title">Romance</h3>
+          </div> -->
+        </article>
+
+        <article class="relatedMovies-container">
+          <h2 class="relatedMovies-title">Related Movies</h2>
+
+          <div class="relatedMovies-scrollContainer">
+            <!-- <div class="movie-container">
+              <img
+                src="https://image.tmdb.org/t/p/w300/adOzdWS35KAo21r9R4BuFCkLer6.jpg"
+                class="movie-img"
+                alt="Nombre de la película"
+              />
+            </div> -->
+          </div>
+        </article>
+      </section>
+
+      <!-- ************************************************************************************************* -->
+
+      <footer>With love by @darioparejadiaz</footer>
+
+      <!-- ************************************************************************************************* -->
     </section>
 
-    <footer>With love by @darioparejadiaz</footer>
+    <!-- ************************************************************************************************* -->
 
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="./src/nodes.js"></script>
     <script src="./src/utils.js"></script>
     <script src="./src/main.js"></script>
     <script src="./src/navigation.js"></script>
+
+    <!-- ************************************************************************************************* -->
   </body>
 </html>
