@@ -6,8 +6,6 @@ Get to know the top 20 movies worldwide through this web application for mobile 
 
 To use the App click here: https://darioparejadiaz.com/the-movie-api/
 
----
-
 ## Technical overview
 
 - This project is built as a single page aplication (SPA) with vanilla JavaScript.
