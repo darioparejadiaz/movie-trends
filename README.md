@@ -12,8 +12,6 @@ To use the App click here: https://darioparejadiaz.com/the-movie-api/
 - Each view of the project is controled by the display property (block or none) according to the case
 - The HTTP requests to TMDB were made with the bult-in fetch API
 
----
-
 ## App views
 
 ### **Home view**
