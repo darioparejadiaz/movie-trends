@@ -29,7 +29,7 @@ function createInvalidSearchMessage(message) {
   h2 = document.createElement("h2");
   h2.textContent = message;
   img = document.createElement("img");
-  img.setAttribute("src", "./assets/person.svg");
+  img.setAttribute("src", "./assets/app-icons/person.svg");
   div.append(h2, img);
   genericSection.append(div);
 }
